@@ -132,6 +132,74 @@
         <mxCell id="23KojjiFSHcbRn-2ENVF-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="trunk" vertex="1">
           <mxGeometry height="30" width="50" x="258" y="355" as="geometry" />
         </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-50" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=0;strokeColor=default;fontSize=12;" value="Legend" vertex="1">
+          <mxGeometry height="156" width="208" x="3" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-51" parent="23KojjiFSHcbRn-2ENVF-50" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="66" width="208" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-52" parent="23KojjiFSHcbRn-2ENVF-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;strokeColor=inherit;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="66" width="68" as="geometry">
+            <mxRectangle height="66" width="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-53" parent="23KojjiFSHcbRn-2ENVF-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=12;" value="VLAN" vertex="1">
+          <mxGeometry height="66" width="140" x="68" as="geometry">
+            <mxRectangle height="66" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-54" parent="23KojjiFSHcbRn-2ENVF-50" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="60" width="208" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-55" parent="23KojjiFSHcbRn-2ENVF-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;strokeColor=inherit;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="60" width="68" as="geometry">
+            <mxRectangle height="60" width="68" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-56" parent="23KojjiFSHcbRn-2ENVF-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;strokeColor=inherit;fontSize=12;" value="Docker container" vertex="1">
+          <mxGeometry height="60" width="140" x="68" as="geometry">
+            <mxRectangle height="60" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=light-dark(#B1DDF0,#F9F9F9);strokeColor=light-dark(#10739E,#000000);opacity=30;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="11" y="636" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-61" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="54" width="50" x="11" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-80" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedHeader=1;fontStyle=1" value="Flow" vertex="1">
+          <mxGeometry height="220" width="541" x="280" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-81" parent="23KojjiFSHcbRn-2ENVF-80" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="64" width="541" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-82" parent="23KojjiFSHcbRn-2ENVF-81" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Standard traffic:&lt;br&gt;internet → firewall → VM-frontend → VM-backend (backend app → postgres)" vertex="1">
+          <mxGeometry height="64" width="541" as="geometry">
+            <mxRectangle height="64" width="541" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-83" parent="23KojjiFSHcbRn-2ENVF-80" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="62" width="541" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-84" parent="23KojjiFSHcbRn-2ENVF-83" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Switch has separated VLANs. All the traffic goes through the switch and is handled in VLANs.&lt;br&gt;Firewall is uplink for the switch and it routes packets between VLANs." vertex="1">
+          <mxGeometry height="62" width="541" as="geometry">
+            <mxRectangle height="62" width="541" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-85" parent="23KojjiFSHcbRn-2ENVF-80" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="64" width="541" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-86" parent="23KojjiFSHcbRn-2ENVF-85" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;div&gt;Hosts can query DNS servers on the internet.&lt;/div&gt;&lt;div&gt;Endpoints have outgoing traffic to download updates/packages.&lt;/div&gt;&lt;div&gt;MGMT endpoints can connect via SSH to the hosts and to firewall/switch GUI.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="541" as="geometry">
+            <mxRectangle height="64" width="541" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="23KojjiFSHcbRn-2ENVF-89" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="560" as="sourcePoint" />
+            <mxPoint x="820" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
