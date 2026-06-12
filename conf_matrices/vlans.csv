@@ -1,0 +1,5 @@
+VLAN ID;Name;Subnet;Gateway;Description;?
+1;Default;-;-;Default switch VLAN not used in this project
+10;DMZ;10.0.10.0/24;10.0.10.1;VM-frontend (internet heading)
+20;LAN;10.0.20.0/24;10.0.20.1;VM-backend (connecting to docker container)
+99;MGMT;10.0.99.0/24;10.0.99.1;For managing hosts via SSH
