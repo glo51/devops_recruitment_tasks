@@ -1,0 +1,18 @@
+vm_list = [
+    {
+        vm_name = "VM-frontend"
+        vcpus = 2
+        ram_mb = 2048
+        disk_gb = 20
+        vlan_id = 10
+        ip_address = "10.0.10.10"
+    },
+    {
+        vm_name = "VM-backend"
+        vcpus = 4
+        ram_mb = 4096
+        disk_gb = 40
+        vlan_id = 20
+        ip_address = "10.0.20.10"
+    }
+]
