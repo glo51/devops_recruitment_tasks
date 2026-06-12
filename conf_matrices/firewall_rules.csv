@@ -1,0 +1,8 @@
+Order;Source;Destination;Port/Protocol;Action;Description
+1;any;VM-frontend;443/tcp;allow;HTTPS to the app
+2;DMZ;LAN;8080/tcp;allow;Communication with backend (API)
+3;DMZ,LAN,MGMT;DNS server;53/tcp,udp;allow;Allow hosts to query DNS records
+4;DMZ,LAN,MGMT endpoints;Internet;80,443/tcp;allow;Download updates, packages, docker images
+5;MGMT endpoints;Firewall,Switch,VM;22/tcp;allow;Manage hosts via SSH
+6;MGMT endpoints;Firewall,Switch;443/tcp;allow;Use admin GUI
+7;any;any;any;deny;Block all the other traffic
