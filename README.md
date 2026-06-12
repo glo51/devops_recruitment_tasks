@@ -1,18 +1,16 @@
-# title
-
-[This project is about...]
-
-## Terraform
-
-[What it does in this project]
-
-### Remote state / backend
-
 ## Docker
-
-[What it does in this project]
 
 ### Installation
 
-### Running containers
+```bash
+sudo apt update
+sudo apt install -y docker.io docker-compose-plugin
+sudo systemctl enable docker
+sudo systemctl start docker
+```
 
+### Running compose containers
+
+```bash
+docker compose up -d
+```
