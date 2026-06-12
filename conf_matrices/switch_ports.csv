@@ -1,4 +1,4 @@
-Port;Mode;VLAN;Description;Status;?
+Port;Mode;VLAN;Description;Status
 Gi0/1;trunk;10,20,99;Firewall uplink;up
 Gi0/2;access;10;VM-frontend;up
 Gi0/3;access;20;VM-backend;up
