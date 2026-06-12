@@ -1,0 +1,26 @@
+services:
+
+  backend:
+    image: "${BACKEND_IMAGE}"
+    restart: unless-stopped
+    networks:
+      - backend
+    ports:
+      - "8080:${BACKEND_CONTAINER_PORT}"
+    depends_on:
+      - db
+
+  db:
+    image: "${POSTGRES_IMAGE}"
+    restart: unless-stopped
+    networks:
+      - backend
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  db_data:
