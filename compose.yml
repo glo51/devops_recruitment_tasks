@@ -1,0 +1,43 @@
+services:
+
+  backend:
+    image: "${BACKEND_IMAGE}"
+    restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: "${DB_NAME}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
+    networks:
+      - backend
+    ports:
+      - "8080:${BACKEND_CONTAINER_PORT}"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: "${POSTGRES_IMAGE}"
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: "${DB_NAME}"
+      POSTGRES_USER: "${DB_USER}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+    networks:
+      - backend
+    volumes:
+      - db_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  db_data:
