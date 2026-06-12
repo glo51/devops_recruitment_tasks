@@ -3,6 +3,12 @@ services:
   backend:
     image: "${BACKEND_IMAGE}"
     restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: "${DB_NAME}"
+      DB_USER: "${DB_USER}"
+      DB_PASSWORD: "${DB_PASSWORD}"
     networks:
       - backend
     ports:
@@ -13,6 +19,10 @@ services:
   db:
     image: "${POSTGRES_IMAGE}"
     restart: unless-stopped
+    environment:
+      POSTGRES_DB: "${DB_NAME}"
+      POSTGRES_USER: "${DB_USER}"
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
     networks:
       - backend
     volumes:
